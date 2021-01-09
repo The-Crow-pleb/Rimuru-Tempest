@@ -1,0 +1,61 @@
+{
+    "languages": ["english", "portugues"],
+    "traduções": {
+        "MEVT": {
+            "english": "started a song!",
+            "portugues": "começou a festa!"
+        },
+        "MEVT_2":{
+            "english": "added a song to the queue!",
+            "portugues": "colocou uma música na playlist!"
+        },
+        "SEVT": {
+            "english": "Here are your search results for: ",
+            "portugues": "Aqui estão seus resultados para: "
+        },
+        "SIVT": {
+            "english": "You must choose a valid number between **1** and ",
+            "portugues": "Você tem de escolher uma resposta válida entre **1** e "
+        },
+        "SCVT": {
+            "english": "You didn't choose a valid response. Please, request the command again.",
+            "portugues": "Você não escolheu uma resposta válida. Por favor, requisite o comando novamente."
+        },
+        "QEVT": {
+            "english": "There are no more musics in the queue, add more!",
+            "portugues": "Não têm mais músicas na queue, adicione mais!"
+        },
+        "PEVT": {
+            "english": "has been added to the queue",
+            "portugues": "foi adicionado à queue"
+        },
+        "NRVT": {
+            "english": "No results found on YouTube for",
+            "portugues": "Nenhum resultado encontrado no youtube para"
+        },
+        "EEVT": {
+            "english": "There is no music being played on this server!",
+            "portugues": "Não há nenhuma música sendo tocada neste servidor!"
+        },
+        "EEVT_2": {
+            "english": "You are not connected in any VOIP!",
+            "portugues": "Você não está conectado em nenhum VOIP!"
+        },
+        "EEVT_3": {
+            "english": "I am not able to join your voice channel, please check my permissions.",
+            "portugues": "Eu não consegui entrar em seu canal de música, por favor, cheque minhas permissões"
+        },
+        "EEVT_4": {
+            "english": "Something went wrong... Error:",
+            "portugues": "Algo de errado aconteceu... Erro:"
+        },
+        "CEVT": {
+            "english": "Music stopped as there is no one listening to it!",
+            "portugues": "Música parou de tocar pois não há ninguem escutando!"
+        },
+        "BTEVT": {
+            "english": "Music stopped because I was disconnected!",
+            "portugues": "Música parou pois fui desconectada!"
+        }
+    }
+}
