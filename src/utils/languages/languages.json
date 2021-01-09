@@ -56,6 +56,100 @@
         "BTEVT": {
             "english": "Music stopped because I was disconnected!",
             "portugues": "Música parou pois fui desconectada!"
+        },
+
+
+        "PFX": {
+            "english": "✅ Sucess!: Prefix Updated.",
+            "portugues": "✅ Sucesso!: Prefixo Configurado."
+        },
+        "PFX2": {
+            "english": "New Prefix is:",
+            "portugues": "Novo Prefixo é:"
+        },
+        "NPFX": {
+            "english": "❌ Failed: Missing Permissions",
+            "portugues": "❌ Falha: Faltando Permissões."
+        },
+        "NPFX2": {
+            "english": "Reason:",
+            "portugues": "Motivo:"
+        },
+        "NPFX3": {
+            "english": "Missing `'Manage Channels'` Permission for the user",
+            "portugues": "Faltando Permissão: `'Gerenciar Servidor'` para o usuário"
+        },
+        "APFX": {
+            "english": "❌ Failed: Missing Arguments",
+            "portugues": "❌ Falha: Faltando Argumentos"
+        },
+        "APFX2": {
+            "english": "You need to provide something for your prefix to change to!",
+            "portugues": "Você precisa providenciar algo para eu configurar o prefixo!"
+        },
+        "APFX3": {
+            "english": "Example:",
+            "portugues": "Exemplo:"
+        },
+        "APFX4": {
+            "english": "Something To Change To",
+            "portugues": "Algo para mudar o prefixo"
+        },
+
+        "AV": {
+            "english": "This",
+            "portugues": "Esse"
+        },
+        "AV2": {
+            "english": "is your PFP!",
+            "portugues": "é a sua PFP!"
+        },
+        "AV3": {
+            "english": "is the user's PFP!",
+            "portugues": "é a PFP do usuário!"
+        },
+        "P_C": {
+            "english": "The bot's host is named FantasyHost!:",
+            "portugues": "A host do bot é a FantasyHost!"
+        },
+        "P2_C": {
+            "english": "Give it a check if you want to",
+            "portugues": "Cheque o site deles, caso desejar"
+        },
+        "P3_C": {
+            "english": "```OBS: The  bot is not in any means associated or sponsored by them.```",
+            "portugues": "```OBS: O bot não é de nenhum modo associado ou patrocinado por eles.```"
+        },
+        "P4": {
+            "english": "Why does the ping varies so much?",
+            "portugues": "Por que o ping varia tanto?"
+        },
+        "P5": {
+            "english": "Simple thing to ask, check down below!",
+            "portugues": "Simples de se responder, cheque abaixo!"
+        },
+        "P6": {
+            "english": "First, the bot has a cooldown feature, it allows 2 commands each 2 seconds, for reasons of not being rate-limited.",
+            "portugues": "Primeiro, o bot tem uma função de cooldown, que permite 2 comandos a cada 2 segundos, para não ser limitado pelo Discord."
+        },
+        "P7": {
+            "english": "Second, the CD feature takes a while to process your message and verify if the bot is not requesting too much of the API.",
+            "portugues": "Segundo, a função de CD leva um tempo para processar sua mensagem e verificar se o bot não está requisitando muito da API."
+        },
+        "P8": {
+            "english": "Third, and the most obvious, it depends on where your server is located. The bot host is located at Virginia-US",
+            "portugues": "Terceiro, e o mais óbvio, depende do lugar em que o servidor estiver. A host do bot se encontra em Virginia-US"
+        },
+        "P9": {
+            "english": "This is my ping:",
+            "portugues": "Esse é o meu ping:"
+        },
+
+
+        
+        "clique": {
+            "english": "Click Here",
+            "portugues": "Clique Aqui"
         }
     }
 }
