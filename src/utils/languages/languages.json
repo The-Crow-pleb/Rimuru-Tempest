@@ -14,8 +14,8 @@
             "portugues": "Aqui estão seus resultados para: "
         },
         "SIVT": {
-            "english": "You must choose a valid number between **1** and ",
-            "portugues": "Você tem de escolher uma resposta válida entre **1** e "
+            "english": "You must choose a valid number between `1` and ",
+            "portugues": "Você tem de escolher uma resposta válida entre `1` e "
         },
         "SCVT": {
             "english": "You didn't choose a valid response. Please, request the command again.",
@@ -54,8 +54,8 @@
             "portugues": "Música parou de tocar pois não há ninguem escutando!"
         },
         "BTEVT": {
-            "english": "Music stopped because I was disconnected!",
-            "portugues": "Música parou pois fui desconectada!"
+            "english": "Music stopped because I was disconnected from your channel!",
+            "portugues": "Música parou pois fui desconectado de seu canal!"
         },
 
 
@@ -150,6 +150,490 @@
         "clique": {
             "english": "Click Here",
             "portugues": "Clique Aqui"
+        },
+
+
+        "DJ": {
+            "english": "❌ Failed: Missing User Permissions",
+            "portugues": "❌ Falha: Faltando Permissões de Usuário"
+        },
+        "DJ_2": {
+            "english": "Sorry, you need the permission `Manage Roles` in order to create the DJ role",
+            "portugues": "Desculpe, você precisa da permissão `Gerenciar Cargos` em order de criar o cargo de DJ"
+        },
+        "DJ_3": {
+            "english": "Ask someone with that permission to create it for you!",
+            "portugues": "Peça à alguém com essa permissão para criar para você!"
+        },
+        "DJ_4": {
+            "english": "Sorry, I do not have the permission to create roles, check my site below to see wich permissions I need in order to work properly:",
+            "portugues": "Desculpe, eu não tenho permissão para criar cargos, veja meu site abaixo para ver quais permissões eu preciso em order para funcionar bem:"
+        },
+        "DJ_5": {
+            "english": "❌ Failed: Missing Bot Permissions",
+            "portugues": "❌ Falha: Faltando Permissões de Bot"
+        },
+        "DJ_6": {
+            "english": "❌ Failed: DJ role already exists\nPlease, check the roles tab.",
+            "portugues": "❌ Falha: Cargo de DJ já existe\nPor favor, cheque a aba de cargos."
+        },
+        "DJ_C": {
+            "english": "The DJ Role is being created, give me a second. . .",
+            "portugues": "O cargo de DJ está sendo criado, me dê um segundo. . ."
+        },
+        "DJ_C2": {
+            "english": "Dj Role was created sucessfully, now give it to someone!",
+            "portugues": "O cargo de DJ foi criado com sucesso!, agora dê ela para alguém!"
+        },
+        "FH":{
+            "english": "These are the filters I can support!:",
+            "portugues": "Esses são os filtros que eu suporto!:"
+        },
+        "FH_2": {
+            "english": "Filters:",
+            "portugues": "Filtros:"
+        },
+        "FH_3": {
+            "english": "How to use: -filter <Filter-Name>",
+            "portugues": "Como usar: -filter <Nome-do-Filtro"
+
+        },
+        "FH_4": {
+            "english": "Go to the next Page to see which filters I support!",
+            "portugues": "Vá para a próxima página para ver quais filtros eu suporto!"
+        },
+        "FH_5":{
+            "english": "Check what each filter do",
+            "portugues": "Cheque o quê cada filtro faz"
+        },
+        "FH_6": {
+            "english": "here",
+            "portugues": "aqui"
+        },
+        "FF": {
+            "english": "❌ Failed: This music was not requested by you.",
+            "portugues": "❌ Falha: Essa música não foi requisitada por você"
+        },
+        "FF_2": {
+            "english": "Please, ask the user named below to do this action.",
+            "portugues": "Por favor, peça ao usuário nomeado abaixo para fazer esta ação"
+        },
+        "FF_3": {
+            "english": "Or ask for a DJ role! A mod can create the role using _dj",
+            "portugues": "Ou peça pelo cargo de DJ! Um mod pode criar ele usando _dj" 
+        },
+        "LPVP": {
+            "english": "You're not in a voice channel to do this!",
+            "portugues": "Você não está em um canal de voz para fazer isso!"
+        },
+        "LPNQ": {
+            "english": "There is no music playing in this server right now!",
+            "portugues": "Não há nenhuma música tocando neste servidor!"
+        },
+        "LPDS": {
+            "english": "Repeat mode is now disabled!",
+            "portugues": "Modo de repetição agora foi desativado!"
+        },
+        "LPAT": {
+            "english": "Repeat mode is now enabled!",
+            "portugues": "Modo de repetição agora foi ativado!"
+        },
+
+        "NP": {
+            "english": "This is how we're vibing today!",
+            "portugues": "É assim que nós festejamos hoje!"
+        },
+        "NP_1": {
+            "english": "Channel",
+            "portugues": "Canal"
+        },
+        "NP_2": {
+            "english": "Requested by:",
+            "portugues": "Requisitado por:"
+        },
+        "NP_3":{ 
+            "english": "Progress bar:",
+            "portugues": "Barra de progresso:"
+        },
+
+
+        "PL": {
+            "english": "You're not in a channel, join one first!",
+            "portugues": "Você não está em um canal, entre em um primeiro!"
+        },
+        "PL_2": {
+            "english": "You need to provide a **link** first!",
+            "portugues": "Você precisa providenciar um **link** primeiro!"
+        },
+
+
+
+        "NOQ": {
+            "english": "No songs are playing right now!",
+            "portugues": "Não há músicas tocando neste momento!"
+        },
+        "Q": {
+            "english": "Server Queue",
+            "portugues": "Queue do Servidor"
+        },
+        "Q_2":{
+            "english": "**Current Music:**",
+            "portugues": "**Música Atual**"
+        },
+        "Q_3": {
+            "english": "And",
+            "portugues": "E"
+        },
+        "Q_4":{ 
+            "english": "(Or more) others songs. . .",
+            "portugues": "(Ou mais) outras músicas. . ."
+        },
+        "Q_5": {
+            "english": "In the playlist are",
+            "portugues": "Na playlist tem"
+        },
+        "Q_6": {
+            "english": "song(s). . .",
+            "portugues": "músicas. . ."
+        },
+
+
+        "SKP": {
+            "english": "The previous music has been skipped by:",
+            "portugues": "A música anterior foi pulada por:"
+        },
+
+
+        "STP": {
+            "english": "Music has been stopped by:",
+            "portugues": "Música foi parada por:"
+        },
+
+
+
+        "MH": {
+            "english": "This is where you get help about the music commands!",
+            "portugues": "Aqui é onde você acha ajuda sobre comandos de música!"
+        },
+        "MH_2": {
+            "english": "This music function was made with:",
+            "portugues": "Essa função de música foi feita com:"
+        },
+        "MH_3": {
+            "english": "Looping the song:",
+            "portugues": "Para repetir o som:"
+        },
+        "MH_4": {
+            "english": "To show the music that is playing now:",
+            "portugues": "Para mostrar a música que está tocando:"
+        },
+        "MH_5": {
+            "english": "To play a music with it's **link**:",
+            "portugues": "Para tocar uma música com seu **link**:"
+        },
+        "MH_6": {
+            "english": "To show the queue in the server:",
+            "portugues": "Para mostrar a queue do servidor:"
+        },
+        "MH_7": {
+            "english": "To skip a music:",
+            "portugues": "Para pular uma música:"
+        },
+        "MH_8": {
+            "english": "To stop a music:",
+            "portugues": "Para parar uma música:"
+        },
+        "MH_9": {
+            "english": "Shuffle",
+            "portugues": "Randomizar"
+        },
+        "PS": {
+            "english": "Song paused!:",
+            "portugues": "Música pausada!"
+        },
+        "PS_2": {
+            "english": "Paused by:",
+            "portugues": "Pausado por:"
+        },
+        "RS": {
+            "english": "Song resumed!:",
+            "portugues": "Música despausada!:"
+        },
+        "RS_2": {
+            "english": "Resumed by:",
+            "portugues": "Despausada por:"
+        },
+        "SF": {
+            "english": "Queue shuffled!:",
+            "portugues": "Queue colocada em modo aleatório!:"
+        },
+        "SF_2": {
+            "english": "song(s)",
+            "portugues": "música(s)"
+        },
+        "FE": {
+            "english": "You need to provide a filter to enable/disable!",
+            "portugues": "Você precisa me dizer qual filtro ativar/desativar!"
+        },
+        "FE_2": {
+            "english": "That filter does not exists! Please, provide a valid filter",
+            "portugues": "Esse filtro não existe, por favor, me dê um filtro válido!"
+        },
+        "FE_3": {
+            "english": "I am now **adding** the provided filter to the music, please, give me a second.",
+            "portugues": "Eu estou **adicionando** o filtro requisitado à música, por favor, me dê um momento."
+        },
+        "FE_4":{ 
+            "english": "The longer the song is, the longer I am going to take to apply the filter to the music.",
+            "portugues": "O quão maior a música for, mais tempo eu levarei para aplicar o filtro."
+        },
+        "FE_5": {
+            "english": "I am now **removing** the provided filter to the music, please, give me a second.",
+            "portugues": "Eu estou **removendo** o filtro requisitado à música, por favor, me dê um momento."
+        },
+        "FE_6":{ 
+            "english": "The longer the song is, the longer I am going to take to remove the filter to the music.",
+            "portugues": "O quão maior a música for, mais tempo eu levarei para remover o filtro."
+        },
+        "FE_7":{
+            "english": "Note:",
+            "portugues": "Nota:"
+        },
+
+        "noperm": {
+            "english": "❌ Failed: Missing Permissions",
+            "portugues": "❌ Falha: Faltando Permissões de Usuário"
+        },
+        "noperm2": {
+            "english": "Missing:",
+            "portugues": "Faltando:"
+        },
+        "noperm3": {
+            "english": "Permission:",
+            "portugues": "Permissão:"
+        },
+        "nobotperm": {
+            "english": "❌ Failed: Missing Bot Permissions",
+            "portugues": "❌ Falha: Faltando Permissão de Bot"
+        },
+
+        "nomemb": {
+            "english": "❌ Failed: Missing Member",
+            "portugues": "❌ Falha: Membro Não Encontrado"
+        },
+        "nomemb2": {
+            "english": "The following member was not found:",
+            "portugues": "O seguinte membro não foi encontrado:"
+        },
+        "unbm": {
+            "english": "I am not able to ban the following member:",
+            "portugues": "Eu não consigo banir o seguinte membro:"
+        },
+        "reason": {
+            "english": "Reason:",
+            "portugues": "Motivo:"
+        },
+        "unbm2": {
+            "english": "The user might have a bigger role than I do!",
+            "portugues": "O usuário pode ter um cargo maior que o meu!"
+        },
+        "noreason": {
+            "english": "Not Provided",
+            "portugues": "Não Informado"
+        },
+        "unkck": {
+            "english": "I am not able to kick the following member:",
+            "portugues": "Eu não consigo expulsar o seguinte membro:"
+        },
+
+        "B": {
+            "english": "✅ Sucess!: User Banned.",
+            "portugues": "✅ Sucesso!: Usuário Banido."
+        },
+        "B2": {
+            "english": "The following user was banned:",
+            "portugues": "O seguinte usuário foi banido:"
+        },
+        "B3": {
+            "english": "Ban Reason:",
+            "portugues": "Motivo do Banimento:"
+        },
+        "B4": {
+            "english": "Banned by:",
+            "portugues": "Banimento realizado por:"
+        },
+        "UB": {
+            "english": "✅ Sucess!: User Unbanned.",
+            "portugues": "✅ Sucesso!: Usuário Desbanido."
+        },
+        "UB2": {
+            "english": "The following user was unbanned:",
+            "portugues": "O seguinte usuário foi desbanido:"
+        },
+        "UB3": {
+            "english": "Unban Reason:",
+            "portugues": "Motivo do Desbanimento:"
+        },
+        "UB4": {
+            "english": "Unbanned by:",
+            "portugues": "Desbanimento realizado por:"
+        },
+        "UBE": {
+            "english": "❌ Failed: Missing Ban",
+            "portugues": "❌ Falha: Banimento Inexistente"
+        },
+        "UBE2": {
+            "english": "The requested user is not banned/does not exist.",
+            "portugues": "O usuário providenciado não está banido/não existe."
+        },
+
+
+        "MT": {
+            "english": "Muted",
+            "portugues": "Silenciado"
+        },
+        "UN": {
+            "english": "❌ Failed: That user is not muted, please, check that before trying to unmute him.",
+            "portugues": "❌ Falha: Este usuário não está mutado, por favor, cheque isso antes de o desmutar."
+        },
+        "UN2": {
+            "english": "✅ Sucess: Unmute",
+            "portugues": "✅ Sucesso: Desmutar"
+        },
+        "UN3": {
+            "english": "User Unmuted:",
+            "portugues": "Membro Desmutado:"
+        },
+        "UN4": {
+            "english": "Unmuted by:",
+            "portugues": "Desmutado por:"
+        },
+        "UN5": {
+            "english": "Not Mentioned.",
+            "portugues": "Não Mencionado."
+        },
+        "M_C": {
+            "english": "You do not have permission to do this!",
+            "portugues": "Desculpe, você não tem permissão para fazer isso."
+        },
+        "M2_C": {
+            "english": "✅ Sucess: Mute",
+            "portugues": "✅ Sucesso: Silenciamento"
+        },
+        "M3_C": {
+            "english": "User Muted:",
+            "portugues": "Membro mutado:"
+        },
+        "M4_C": {
+            "english": "Mute done by",
+            "portugues": "Silenciamento realizado por"
+        },
+        "M_C2": {
+            "english": "❌ Failed: Member already muted.",
+            "portugues": "❌ Falha: Membro já mutado."
+        },
+        "M_C3": {
+            "english": "❌ Failed: Member not found",
+            "portugues": "❌ Falha: Membro não encontrado"
+        },
+        "M_C4": {
+            "english": "Correct Usage:",
+            "portugues": "Uso Correto:"
+        },
+        "M_E": {
+            "english": "Error found!",
+            "portugues": "Erro encontrado!"
+        },
+        "M_E2": {
+            "english": "Error:",
+            "portugues": "Erro:"
+        },
+        "M_E3": {
+            "english": "Solution:",
+            "portugues": "Solução:"
+        },
+        "M_E4": {
+            "english": "Go to the next page.",
+            "portugues": "Vá para a próxima página."
+        },
+        "M_E5": {
+            "english": "Quickfix:",
+            "portugues": "Solução Rápida"
+        },
+        "M_E6": {
+            "english": "Check the bot's permissions, you can check which perms the bot need in the link below:",
+            "portugues": "Cheque as permissões do bot, você pode ver quais permissões ela precisa para funcionar no link abaixo:"
+        },
+        "M_E7": {
+            "english": "Check the bot role hierarchy.",
+            "portugues": "Cheque a hierarquia de cargos."
+        },
+        "M_E8": {
+            "english": "It's simple, if the user has a role higher than the bot's role, then the bot is unable to do something with that person.\nPlease, check that (Since it's the most common issue.)",
+            "portugues": "É simples, se o usuário tiver um cargo superior à do bot, o bot não poderá fazer algo com aquela pessoa.\nPor favor, verifique isso (já que é o problema mais comum.)"
+        },
+        "M_IV": {
+            "english": "Tried to find member:",
+            "portugues": "Tentei encontrar o membro:"
+        },
+        "M_IV2": {
+            "english": "Result:",
+            "portugues": "Resultado:"
+        },
+        "M_IV3": {
+            "english": "Invalid Member",
+            "portugues": "Membro inválido"
+        },
+
+        "ADDR": {
+            "english": "❌ Failed: No Role Found",
+            "portugues": "❌ Falha: Nenhum Cargo Encontrado"
+        },
+        "addr": {
+            "english": "✅ Sucess!: Role added.",
+            "portugues": "✅ Sucesso!: Cargo adicionado."
+        },
+        "addr2": {
+            "english": "Role(s) added:",
+            "portugues": "Cargo(s) adicionados:"
+        },
+
+        "create": {
+            "english": "❌ Failed: Role Already Exists",
+            "portugues": "❌ Falha: Cargo já Existente"
+        },
+        "create2": {
+            "english": "This error was sent because the following role already exists:",
+            "portugues": "Esse erro foi enviado pois o seguinte cargo já existe:"
+        },
+        "created": {
+            "english": "✅ Sucess: Role Created.",
+            "portugues": "✅ Sucesso: Cargo Criado"
+        },
+        "created2": {
+            "english": "The following role was created:",
+            "portugues": "O seguinte cargo foi criado:"
+        },
+        "ncreate": {
+            "english": "❌ Error: Role Creation Failed.",
+            "portugues": "❌ Erro: Criação de Cargo Falhou"
+        },
+        "ncreate2": {
+            "english": "The following error ocurred:",
+            "portugues": "O seguinte erro aconteceu:"
+        },
+        "ncreate3": {
+            "english": "Correct Usage:",
+            "portugues": "Uso Correto:"
+        },
+        "ncreate4": {
+            "english": "❌ Failed: Missing Args",
+            "portugues": "❌ Falha: Faltando Argumentos"
+        },
+        "ncreate5": {
+            "english": "<yourPrefix>createrole <roleName> <roleColor: optional>",
+            "portugues": "<seuPrefixo>createrole <nome_do_cargo> <cor_do_cargo: opcional>"
         }
+
     }
 }
