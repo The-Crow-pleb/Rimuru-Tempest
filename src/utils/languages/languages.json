@@ -417,6 +417,10 @@
             "portugues": "❌ Falha: Faltando Permissão de Bot"
         },
 
+        "norl": {
+            "english": "The following role was not found:",
+            "portugues": "O seguinte cargo não foi encontrado:"
+        },
         "nomemb": {
             "english": "❌ Failed: Missing Member",
             "portugues": "❌ Falha: Membro Não Encontrado"
@@ -488,7 +492,7 @@
         },
 
 
-        "MT": {
+        "M_R": {
             "english": "Muted",
             "portugues": "Silenciado"
         },
@@ -569,8 +573,8 @@
             "portugues": "Cheque a hierarquia de cargos."
         },
         "M_E8": {
-            "english": "It's simple, if the user has a role higher than the bot's role, then the bot is unable to do something with that person.\nPlease, check that (Since it's the most common issue.)",
-            "portugues": "É simples, se o usuário tiver um cargo superior à do bot, o bot não poderá fazer algo com aquela pessoa.\nPor favor, verifique isso (já que é o problema mais comum.)"
+            "english": "It's simple, if the user has a role higher than the bot's role, or the role you're trying to add/remove is bigger than the bot's role, then the bot is unable to do something with that person.\nPlease, check that (Since it's the most common issue.)",
+            "portugues": "É simples, se o usuário tiver um cargo superior à do bot, ou se o cargo for superior do que o do bot, o bot não poderá adicionar ou remover o cargo daquela pessoa.\nPor favor, verifique isso (já que é o problema mais comum.)"
         },
         "M_IV": {
             "english": "Tried to find member:",
@@ -596,6 +600,22 @@
         "addr2": {
             "english": "Role(s) added:",
             "portugues": "Cargo(s) adicionados:"
+        },
+        "raddr": {
+            "english": "✅ Sucess!: Role removed.",
+            "portugues": "✅ Sucesso!: Cargo removido."
+        },
+        "raddr2": {
+            "english": "Role(s) removed:",
+            "portugues": "Cargo(s) removidos:"
+        },
+        "RADDR": {
+            "english": "❌ Failed: User does not has the mentioned role:",
+            "portugues": "❌ Falha: Usuário não tem o cargo mencionado:"
+        },
+        "ADDR2": {
+            "english": "❌ Failed: User already has the mentioned role:",
+            "portugues": "❌ Falha: Usuário já tem o cargo mencionado:"
         },
 
         "create": {
@@ -631,8 +651,248 @@
             "portugues": "❌ Falha: Faltando Argumentos"
         },
         "ncreate5": {
-            "english": "<yourPrefix>createrole <roleName> <roleColor: optional>",
-            "portugues": "<seuPrefixo>createrole <nome_do_cargo> <cor_do_cargo: opcional>"
+            "english": "`<yourPrefix>createrole <roleName> <roleColor: optional>`",
+            "portugues": "`<seuPrefixo>createrole <nome_do_cargo> <cor_do_cargo: opcional>`"
+        },
+        "addr3": {
+            "english": "`<yourPrefix>addrole <@member> <@role>`",
+            "portugues": "`<seuPrefixo>createrole <@member> <@cargo>`"
+        },
+        "lck": {
+            "english": "`<yourPrefix>lock <@channel = Optional> <@role>`",
+            "portugues": "`<seuPrefixo>lock <@canal = Opcional> <@cargo>`"
+        },
+        "LCK": {
+            "english": "✅ Sucess!: Channel Lock",
+            "portugues": "✅ Sucesso!: Bloqueio de Canal"
+        },
+        "LCK2": {
+            "english": "Channel Locked:",
+            "portugues": "Canal Bloqueado:"
+        },
+        "LCK3": {
+            "english": "Role Locked:",
+            "portugues": "Cargo Bloqueado:"
+        },
+        "lckr": {
+            "english": "✅ Sucess!: Server Lock",
+            "portugues": "✅ Sucesso!: Bloqueio de Servidor"
+        },
+        "lckr2": {
+            "english": "Server Locked:",
+            "portugues": "Servidor Bloqueado:"
+        },
+        "ulckr": {
+            "english": "✅ Sucess!: Server Unlock",
+            "portugues": "✅ Sucesso!: Desbloqueio de Servidor"
+        },
+        "ulckr2": {
+            "english": "Server Unlocked:",
+            "portugues": "Servidor Desbloqueado:"
+        },
+        "ulckr3": {
+            "english": "Role Unlocked:",
+            "portugues": "Cargo Desbloqueado:"
+        },
+        "HUG_C": {
+            "english": "Hey! I don't like to hug!!",
+            "portugues": "Hey! E-eu não gosto de abraços!"
+        },
+        "HUG_C1": {
+            "english": "Anyways... Thank you...",
+            "portugues": "Eu agradeço de qualquer modo, é bom ser abraçada..."
+        },
+        "HUG_C2": {
+            "english": "A hug a day keeps the demons at bay.",
+            "portugues": "A vida fica mais doce com abraços!"
+        },
+        "HUG_C3": {
+            "english": "hugged",
+            "portugues": "deu um abraço em"
+        },
+        "HUG_C4": {
+            "english": "I will not play tug o' war. I'd rather play hug o' war. Where everyone hugs instead of tugs, Where everyone giggles and rolls on the rug, Where everyone kisses, and everyone grins, and everyone cuddles, and everyone wins.",
+            "portugues": "Ah o abraço… Tem coisa melhor do que encostar a cabeça no peito de um alguém e sentir seu coração bater?"
+        },
+        "HUG_C5": {
+            "english": "Oh... Sorry about that, but I coudnt find who you want to hug. Try mentioning the person you want to hug!",
+            "portugues": "Ah.. Eu sei que você queria muito abraçar alguém, mas não foi encontrei quem. Tente mencionar a pessoa que você deseja abraçar!"
+        },
+        "KISS_C": {
+            "english": "Hah! And you thought I'd let you kiss me?",
+            "portugues": "Hah! E você pensando que eu te deixaria me beijar?"
+        },
+        "KISS_C1": {
+            "english": "The only one who can do that is Suzu!",
+            "portugues": "A única autorizada a me beijar é a Suzu!"
+        },
+        "KISS_C2": {
+            "english": "You're in trouble!",
+            "portugues": "Você está encrencado!"
+        },
+        "KISS_C4": {
+            "english": "Now a soft kiss – Aye, by that kiss, I vow an endless bliss",
+            "portugues": "Agradeça ao vento, pois sempre que ele te tocar, saberás que é meu beijo a te acalentar."
+        },
+        "KISS_C5": {
+            "english": "kissed",
+            "portugues": "beijou"
+        },
+        "KISS_C6": {
+            "english": "Please, creator, make me immortal with a kiss...",
+            "portugues": "Amo-te tanto. E nunca te beijei... E nesse beijo, amor, que eu não te dei, guardo os versos mais lindos que te fiz."
+        },
+        "PAT_C": {
+            "english": "Thank you for headpatting me, kind stranger",
+            "portugues": "Obrigado por me fazer carinho, caro estranho"
+        },
+        "PAT_C2": {
+            "english": "headpatted me!",
+            "portugues": "me fez carinho!"
+        },
+        "PAT_C4": {
+            "english": "Here are some cuddles to make your day better!",
+            "portugues": "Aqui um pouco de carinho para melhorar seu dia!"
+        },
+        "PAT_C5": {
+            "english": "headpatted",
+            "portugues": "fez carinho em"
+        },
+        "S_C": {
+            "english": "Hey! Don't event try to get close of my Master.",
+            "portugues": "Hey! Não tente nem chegar perto de meu Mestre."
+        },
+        "S_C2": {
+            "english": "Tried to slap Rimuru",
+            "portugues": "Tentou bater em Rimuru"
+        },
+        "S_C4": {
+            "english": "Uuuh, that must've hurt!",
+            "portugues": "Uuuh, isso deve ter doido!"
+        },
+        "S_C5": {
+            "english": "slapped",
+            "portugues": "bateu em"
+        },
+        "sUsage": {
+            "english": "`<yourPrefix>slap <@member>`",
+            "portugues": "`<seuPrefixo>slap <@membro>`"
+        },
+        "kUsage": {
+            "english": "`<yourPrefix>kiss <@member>`",
+            "portugues": "`<seuPrefixo>kiss <@membro>`"
+        },
+        "mUsage": {
+            "english": "`<yourPrefix>unmute <@member>`",
+            "portugues": "`<seuPrefixo>unmute <@membro>`"
+        },
+        "pUsage": {
+            "english": "`<yourPrefix>pat <@member>`",
+            "portugues": "`<seuPrefixo>pat <@membro>`"
+        },
+        "hUsage": {
+            "english": "`<yourPrefix>hug <@member>`",
+            "portugues": "`<seuPrefixo>hug <@membro>`"
+        },
+        "bUsage": {
+            "english": "`<yourPrefix>ban <@member>`",
+            "portugues": "`<seuPrefixo>ban <@membro>`"
+        },
+        "ubUsage": {
+            "english": "`<yourPrefix>unban <@member>`",
+            "portugues": "`<seuPrefixo>unban <@membro>`"
+        },
+        "umUsage": {
+            "english": "`<yourPrefix>mute <@member>`",
+            "portugues": "`<seuPrefixo>mute <@membro>`"
+        },
+        "SI_C": {
+            "english": "Guild Owner:",
+            "portugues": "Dono do Servidor"
+        },
+        "SI_C2": {
+            "english": "Member Count:",
+            "portugues": "Contagem de membros:"
+        },
+        "SI_MB": {
+            "english": "members",
+            "portugues": "membros" 
+        },
+        "SI_C3": {
+            "english": "User status:",
+            "portugues": "Status dos Usuários:"
+        },
+        "SI_ST": {
+            "english": "Members online",
+            "portugues": "Membros online"
+        },
+        "SI_ST2": {
+            "english": "Members in Idle",
+            "portugues": "Membros AFK"
+        },
+        "SI_ST3": {
+            "english": "Members in Do not Disturb",
+            "portugues": "Membros em 'Não Perturbe'"
+        },
+        "SI_ST4": {
+            "english": "Members Offline",
+            "portugues": "Membros Offline"
+        },
+        "SI_C4": {
+            "english": "Role Count:",
+            "portugues": "Contagem de Cargos:"
+        },
+        "SI_RC": {
+            "english": "roles",
+            "portugues": "cargos"
+        },
+        "SI_C5": {
+            "english": "Channel Count:",
+            "portugues": "Contagem de Canal:"
+        },
+        "SI_CC": {
+            "english": "text channels",
+            "portugues": "canais de texto"
+        },
+        "SI_CC2": {
+            "english": "voice channels",
+            "portugues": "canais de texto"
+        },
+        "SI_C6": {
+            "english": "Guild Created at:",
+            "portugues": "Servidor criado em:"
+        },
+        "SI_C7": {
+            "english": "Emojis info",
+            "portugues": "Emojis info"
+        },
+        "SI_EM": {
+            "english": "emojis in the guild",
+            "portugues": "emojis no servidor"
+        },
+        "SI_C8": {
+            "english": "Bot count",
+            "portugues": "Contagem de bot"
+        },
+        "I_C": {
+            "english": "Hello! Thank you for using me!",
+            "portugues": "Olá! Obrigado por me utilizar!"
+        },
+        "I2_C": {
+            "english": "Here you can find where to invite me for your server!",
+            "portugues": "Aqui você pode encontrar onde me convidar para seu servidor!"
+        },
+        "I3_C": {
+            "english": "Hope you enjoy!",
+            "portugues": "Espero que goste!"
+        },
+        "SVIC": {
+            "english": "This",
+            "portugues": "Esse"
+        },
+        "SVIC_C": {
+            "english": "is the server icon",
+            "portugues": "é o ícone do servidor"
         }
 
     }

@@ -6,8 +6,8 @@ module.exports = {
     description: "Creates the DJ role",
     run: async(client, message) => {
         const { guild } = message
-
-        if(!message.member.hasPermission('MANAGE_ROLES')) {
+        perm = ['MANAGE_ROLES']
+        if(!message.member.hasPermission(perm)) {
             const noPerm = new MessageEmbed()
                 .setDescription(`${languages(guild, "DJ")}`)
                 .addFields(
@@ -20,18 +20,18 @@ module.exports = {
             message.reply(noPerm)
             return
         }
-        if(!message.guild.me.hasPermission('MANAGE_ROLES')) {
-                const noPerm = new MessageEmbed()
-                .setDescription(`${languages(guild, "DJ_5")}`)
+        if(!message.guild.me.hasPermission(perm)) {
+            const noPerm = new MessageEmbed()
+                .setAuthor(guild.name, guild.iconURL({dynamic: true}))
+                .setColor("RED")
+                .setDescription(languages(guild, "nobotperm"))
                 .addFields(
                     {
-                        name: `${languages(guild, "DJ_4")}`,
-                        value: `[${languages(guild, "H_C21")}](https://www.applepiebot.xyz/permission-flags)`
+                        name: `${languages(guild, "noperm2")}`,
+                        value: `${languages(guild, "noperm3")} \`${perm}\``
                     }
                 )
-                .setColor('RED')
-            message.reply(noPerm)
-            return
+            message.reply(noPerm); return
         }
 
         if(message.guild.roles.cache.find(x => x.name === "DJ")) {

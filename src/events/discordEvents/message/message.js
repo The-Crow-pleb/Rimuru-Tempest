@@ -4,13 +4,13 @@ const newPrefixSchema = require('../../../configs/dbs/schemas/prefix-schema')
 module.exports = async(client, message) => {
     
     if(message.author.bot) return
-    const {guild, channel, author} = message
+    const {guild, author} = message
     let settings = await newPrefixSchema.findOne({_id: guild.id,}, (err, _id) => {if(!_id) {
         const newGuild = new newPrefixSchema({_id:message.guild.id, prefix: process.env.PREFIX})
         newGuild.save()
         return
     }})
-    let PREFIX =  settings.prefix
+    let PREFIX = settings.prefix
 
     let limited = limiter.take(author.id)
 

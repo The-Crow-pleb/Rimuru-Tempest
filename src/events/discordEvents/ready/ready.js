@@ -1,11 +1,11 @@
 module.exports = async(client) => {
 
-    const newPrefixSchema = require('../../../configs/dbs/schemas/prefix-schema')
     const {loadLangs} = require('../../../utils/languages/languages')
     const status = require('../../../configs/status/statusA');
     const random = status[Math.floor(Math.random() * status.length)];
     const ms = require('ms');
     const db = require('../../../configs/dbs/dbLogin');
+    
     db.then(() => console.log(`${client.user.username} se conectou à DB!`)).catch(err => console.log(err))
     console.log('╠══════════════════════════════════ ( Login ) ═══════════════════════════════════════╣')
     console.log(`║ > Entrou como ${client.user.tag}!                                                 ║`);
