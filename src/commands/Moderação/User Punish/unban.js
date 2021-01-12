@@ -2,7 +2,7 @@ const { MessageEmbed } = require("discord.js")
 const languages = require('../../../utils/languages/languages')
 
 module.exports = {
-    aliases: ['b'],
+    aliases: ['ub'],
     description: 'Para banir um usuário',
     run: async(client, message, args) => {
         const {guild} = message
@@ -33,6 +33,7 @@ module.exports = {
             message.reply(noPerm); return
         }
         if(!args[0]) {
+            if(args[0] === undefined) args[0] = languages(guild, "noreason")
             const noMember = new MessageEmbed()
                 .setAuthor(guild.name, guild.iconURL({dynamic: true}))
                 .setColor("RED")
@@ -41,6 +42,10 @@ module.exports = {
                     {
                         name: languages(guild, "nomemb2"),
                         value: `\`${args[0]}\``
+                    },
+                    {
+                        name: languages(guild, "ncreate3"),
+                        value: languages(guild, "ubUsage")
                     }
                 )
             message.reply(noMember); return

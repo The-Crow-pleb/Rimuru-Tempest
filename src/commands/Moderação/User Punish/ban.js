@@ -34,6 +34,7 @@ module.exports = {
             message.reply(noPerm); return
         }
         if(!member) {
+            if(args[0] === undefined) args[0] = languages(guild, "noreason")
             const noMember = new MessageEmbed()
                 .setAuthor(guild.name, guild.iconURL({dynamic: true}))
                 .setColor("RED")
@@ -42,6 +43,10 @@ module.exports = {
                     {
                         name: languages(guild, "nomemb2"),
                         value: `\`${args[0]}\``
+                    },
+                    {
+                        name: languages(guild, "ncreate3"),
+                        value: languages(guild, "bUsage")
                     }
                 )
             message.reply(noMember); return
