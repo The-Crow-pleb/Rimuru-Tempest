@@ -1,4 +1,4 @@
-const dbdSchema = require('../../../configs/dbs/schemas/dbd-id-schema')
+const dbdSchema = require('../../../../configs/dbs/schemas/dbd-id-schema')
 const ssteam = require('steamapi')
 const {MessageEmbed} = require('discord.js')
 const s = new ssteam(process.env.STEAM_TOKEN)
@@ -14,8 +14,13 @@ module.exports = {
                     s.getUserRecentGames(`${id}`).then(recent => {
                         let gameName = recent.find(x => x.name === 'Dead by Daylight')
                         if(!gameName) {
-                            message.reply('Você precisa ter jogado Dead by Daylight nas últimas duas semanas para eu te dar informações!')
-                            return
+                            const errEmbed = new MessageEmbed()
+                                .setAuthor(guild.name, guild.iconURL({dynamic: true}))
+                                .setDescription()
+                                .addFields(
+                                    {name: '', value: ''},
+                                )
+                            message.reply(errEmbed); return
                         }
                         let gData = data.stats
                         let rawGameTime = gameName.playTime; let realGameTime = Math.floor(rawGameTime / 60); let realRankingSurv = data.stats.DBD_CamperSkulls
@@ -35,9 +40,33 @@ module.exports = {
                             )
                             .setFooter(`${realGameTime} Horas de Jogo`, client.user.avatarURL())
                         message.reply(page1)
-                    }).catch(err => message.reply(`Seu perfil da Steam pode estar privado, não consigo ver seus detalhes!:\n${err}`))
-                }).catch(err => message.reply(`Seu perfil da Steam pode estar privado, não consigo ver seus detalhes!:\n${err}`))
-            }).catch(err => message.reply(`Seu perfil da Steam pode estar privado, não consigo ver seus detalhes!:\n${err}`))
+                    }).catch(err => {
+                        const errEmbed = new MessageEmbed()
+                            .setAuthor(guild.name, guild.iconURL({dynamic: true}))
+                            .setDescription()
+                            .addFields(
+                                {name: '', value: ''},
+                            )
+                        message.reply(errEmbed)
+                    })
+                }).catch(err => {
+                    const errEmbed = new MessageEmbed()
+                        .setAuthor(guild.name, guild.iconURL({dynamic: true}))
+                        .setDescription()
+                        .addFields(
+                            {name: '', value: ''},
+                        )
+                    message.reply(errEmbed)
+                })
+            }).catch(err => {
+                const errEmbed = new MessageEmbed()
+                    .setAuthor(guild.name, guild.iconURL({dynamic: true}))
+                    .setDescription()
+                    .addFields(
+                        {name: '', value: ''},
+                    )
+                message.reply(errEmbed)
+            })
         })
     }
 }

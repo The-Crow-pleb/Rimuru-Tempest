@@ -1,7 +1,7 @@
 const dbdSchema = require('../../../configs/dbs/schemas/dbd-id-schema')
 
 module.exports = {
-    aliases:['dbdregister', 'dbd registrar', 'dbd-r', 'rdbd'],
+    aliases:['steamr', 'registrar-steam', 'r-steam', 'rsteam'],
     description: '',
     run: async(client, message, args) => {
         let userId = message.author.id;

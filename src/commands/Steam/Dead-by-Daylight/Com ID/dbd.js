@@ -6,6 +6,8 @@ module.exports = {
     aliases:[],
     description: '',
     run:async(client, message, args) => {
+
+        const {guild, author} = message
         const verify = new RegExp('(?:https?:\/\/)?steamcommunity\.com\/(?:profiles|id)\/[a-zA-Z0-9]+')
         let id = message.content.match(verify)
         
@@ -18,8 +20,13 @@ module.exports = {
                             s.getUserRecentGames(`${id2}`).then(recent => {
                                 let gameName = recent.find(x => x.name === 'Dead by Daylight')
                                 if(!gameName) {
-                                    message.reply('Você precisa ter jogado Dead by Daylight nas últimas duas semanas para eu te dar informações!')
-                                    return
+                                    const errEmbed = new MessageEmbed()
+                                        .setAuthor(guild.name, guild.iconURL({dynamic: true}))
+                                        .setDescription()
+                                        .addFields(
+                                            {name: '', value: ''},
+                                        )
+                                    message.reply(errEmbed); return
                                 }
                                 let gData = data.stats
                                 let rawGameTime = gameName.playTime; let realGameTime = Math.floor(rawGameTime / 60)
@@ -39,12 +46,42 @@ module.exports = {
                                     )
                                     .setFooter(`${realGameTime} Horas de Jogo`, client.user.avatarURL())
                                 message.reply(page1)
-                            }).catch(err => message.reply(`Seu perfil da Steam pode estar privado, não consigo ver seus detalhes!:\n${err}c`))
-                        }).catch(err => message.reply(`Seu perfil da Steam pode estar privado, não consigo ver seus detalhes!:\n${err}b`))
-                    }).catch(err => message.reply(`Seu perfil da Steam pode estar privado, não consigo ver seus detalhes!:\n${err}a`))
+                            }).catch(err => {
+                                const errEmbed = new MessageEmbed()
+                                    .setAuthor(guild.name, guild.iconURL({dynamic: true}))
+                                    .setDescription()
+                                    .addFields(
+                                        {name: '', value: ''},
+                                    )
+                                message.reply(errEmbed)
+                            })
+                        }).catch(err => {
+                            const errEmbed = new MessageEmbed()
+                                .setAuthor(guild.name, guild.iconURL({dynamic: true}))
+                                .setDescription()
+                                .addFields(
+                                    {name: '', value: ''},
+                                )
+                            message.reply(errEmbed)
+                        })
+                    }).catch(err => {
+                        const errEmbed = new MessageEmbed()
+                            .setAuthor(guild.name, guild.iconURL({dynamic: true}))
+                            .setDescription()
+                            .addFields(
+                                {name: '', value: ''},
+                            )
+                        message.reply(errEmbed)
+                    })
                 } catch (error) {
                     console.log(error)
-                    message.reply('Oops')
+                    const errEmbed = new MessageEmbed()
+                        .setAuthor(guild.name, guild.iconURL({dynamic: true}))
+                        .setDescription()
+                        .addFields(
+                            {name: '', value: ''},
+                        )
+                    message.reply(errEmbed)
                 }
             })
         } else if(id === null) {
@@ -58,8 +95,13 @@ module.exports = {
                                 s.getUserRecentGames(`${id2}`).then(recent => {
                                     let gameName = recent.find(x => x.name === 'Dead by Daylight')
                                     if(!gameName) {
-                                        message.reply('Você precisa ter jogado Dead by Daylight nas últimas duas semanas para eu te dar informações!')
-                                        return
+                                        const errEmbed = new MessageEmbed()
+                                            .setAuthor(guild.name, guild.iconURL({dynamic: true}))
+                                            .setDescription()
+                                            .addFields(
+                                                {name: '', value: ''},
+                                            )
+                                        message.reply(errEmbed); return
                                     }
                                     let gData = data.stats
                                     let rawGameTime = gameName.playTime; let realGameTime = Math.floor(rawGameTime / 60); let realRankingSurv = data.stats.DBD_CamperSkulls
@@ -79,12 +121,40 @@ module.exports = {
                                         )
                                         .setFooter(`${realGameTime} Horas de Jogo`, client.user.avatarURL())
                                     message.reply(page1)
-                                }).catch(err => message.reply(`Seu perfil da Steam pode estar privado, não consigo ver seus detalhes!:\n${err}`))
-                            }).catch(err => message.reply(`Seu perfil da Steam pode estar privado, não consigo ver seus detalhes!:\n${err}`))
-                        }).catch(err => message.reply(`Seu perfil da Steam pode estar privado, não consigo ver seus detalhes!:\n${err}`))
+                                }).catch(err => {
+                                    const errEmbed = new MessageEmbed()
+                                        .setAuthor(guild.name, guild.iconURL({dynamic: true}))
+                                        .setDescription()
+                                        .addFields(
+                                            {name: '', value: ''},
+                                        )
+                                })
+                            }).catch(err => {
+                                const errEmbed = new MessageEmbed()
+                                    .setAuthor(guild.name, guild.iconURL({dynamic: true}))
+                                    .setDescription()
+                                    .addFields(
+                                        {name: '', value: ''},
+                                    )
+                                message.reply(errEmbed)
+                            })
+                        }).catch(err => {
+                            const errEmbed = new MessageEmbed()
+                                .setAuthor(guild.name, guild.iconURL({dynamic: true}))
+                                .setDescription()
+                                .addFields(
+                                    {name: '', value: ''},
+                                )
+                            message.reply(errEmbed)
+                        })
                     } catch (error) {
-                        console.log(error)
-                        message.reply('Oops')
+                        const errEmbed = new MessageEmbed()
+                            .setAuthor(guild.name, guild.iconURL({dynamic: true}))
+                            .setDescription()
+                            .addFields(
+                                {name: '', value: ''},
+                            )
+                        message.reply(errEmbed)
                     }
                 }).catch(err => message.reply(`Não foi encontrado nenhum perfil com o id: ${id}`))
             } else if(!isNaN(id)) {
@@ -94,8 +164,13 @@ module.exports = {
                             s.getUserRecentGames(`${id}`).then(recent => {
                                 let gameName = recent.find(x => x.name === 'Dead by Daylight')
                                 if(!gameName) {
-                                    message.reply('Você precisa ter jogado Dead by Daylight nas últimas duas semanas para eu te dar informações!')
-                                    return
+                                    const errEmbed = new MessageEmbed()
+                                        .setAuthor(guild.name, guild.iconURL({dynamic: true}))
+                                        .setDescription()
+                                        .addFields(
+                                            {name: '', value: ''},
+                                        )
+                                    message.reply(errEmbed); return
                                 }
                                 let gData = data.stats
                                 let rawGameTime = gameName.playTime; let realGameTime = Math.floor(rawGameTime / 60); let realRankingSurv = data.stats.DBD_CamperSkulls
@@ -115,12 +190,41 @@ module.exports = {
                                     )
                                     .setFooter(`${realGameTime} Horas de Jogo`, client.user.avatarURL())
                                 message.reply(page1)
-                            }).catch(err => message.reply(`Seu perfil da Steam pode estar privado, não consigo ver seus detalhes!:\n${err}`))
-                        }).catch(err => message.reply(`Seu perfil da Steam pode estar privado, não consigo ver seus detalhes!:\n${err}`))
-                    }).catch(err => message.reply(`Seu perfil da Steam pode estar privado, não consigo ver seus detalhes!:\n${err}`))
+                            }).catch(err => {
+                                const errEmbed = new MessageEmbed()
+                                    .setAuthor(guild.name, guild.iconURL({dynamic: true}))
+                                    .setDescription()
+                                    .addFields(
+                                        {name: '', value: ''},
+                                    )
+                                message.reply(errEmbed)
+                            })
+                        }).catch(err => {
+                            const errEmbed = new MessageEmbed()
+                                .setAuthor(guild.name, guild.iconURL({dynamic: true}))
+                                .setDescription()
+                                .addFields(
+                                    {name: '', value: ''},
+                                )
+                            message.reply(errEmbed)
+                        })
+                    }).catch(err => {
+                        const errEmbed = new MessageEmbed()
+                            .setAuthor(guild.name, guild.iconURL({dynamic: true}))
+                            .setDescription()
+                            .addFields(
+                                {name: '', value: ''},
+                            )
+                        message.reply(errEmbed)
+                    })
                 } catch (error) {
-                    console.log(error)
-                    message.reply('Oops')
+                    const errEmbed = new MessageEmbed()
+                        .setAuthor(guild.name, guild.iconURL({dynamic: true}))
+                        .setDescription()
+                        .addFields(
+                            {name: '', value: ''},
+                        )
+                    message.reply(errEmbed)
                 }
             }
         }
