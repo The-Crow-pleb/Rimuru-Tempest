@@ -4,10 +4,6 @@ const reqString = {
     type: String,
     required: true
 }
-const reqNumber = {
-    type: Number,
-    required: true
-}
 
 const dbdSchema = mongoose.Schema({
     _id: reqString,

@@ -1,4 +1,4 @@
-const dbdSchema = require('../../../configs/dbs/schemas/dbd-id-schema')
+const dbdSchema = require('../../../configs/dbs/schemas/steamLogin-schema')
 
 module.exports = {
     aliases:['steamr', 'registrar-steam', 'r-steam', 'rsteam'],
@@ -13,5 +13,5 @@ module.exports = {
             {_id: steamName, steam: steamID, userID: userId },
             {upsert: true}
         ).then(result => console.log(result)).catch(err => console.log(err))
-    }
+    } 
 }

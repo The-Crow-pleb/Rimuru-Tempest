@@ -1,6 +1,5 @@
 const { MessageEmbed } = require('discord.js')
-const ssteam = require('steamapi')
-const s = new ssteam(process.env.STEAM_TOKEN)
+const ssteam = require('steamapi'); const s = new ssteam(process.env.STEAM_TOKEN)
 
 module.exports = {
     aliases:[],

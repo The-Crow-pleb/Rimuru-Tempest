@@ -1,13 +1,13 @@
-const dbdSchema = require('../../../../configs/dbs/schemas/dbd-id-schema')
-const ssteam = require('steamapi')
+const dbdSchema = require('../../../../configs/dbs/schemas/steamLogin-schema')
+const ssteam = require('steamapi'); const s = new ssteam(process.env.STEAM_TOKEN)
 const {MessageEmbed} = require('discord.js')
-const s = new ssteam(process.env.STEAM_TOKEN)
+
 
 module.exports = {
     aliases: ['dbd-login', 'dbdlogin', 'ldbd'],
     description: '',
     run: async(client, message, args) => {
-        const results = await dbdSchema.findOne({userID: message.author.id}).then(async(result) => {
+        await dbdSchema.findOne({userID: message.author.id}).then(async(result) => {
             let id = result._id
             s.getUserStats(`${id}`, '381210').then((data) => {
                 s.getUserSummary(`${id}`).then(summary => {
